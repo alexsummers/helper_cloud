@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title Admin panel 'HelperCloud'
+    = stylesheet_link_tag    'admin', media: 'all'
+    = javascript_include_tag 'admin'
+    = csrf_meta_tags
+  %body
+    .menu
+      %ul
+        %li
+          %a
+            home
+        %li
+          %a
+            root
+        %li
+          %a
+            active
+        %li
+          %a
+            admin
+        %li
+          %a
+            user
+
+    = yield

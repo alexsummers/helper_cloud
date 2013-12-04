@@ -1,0 +1,5 @@
+%h1 Articles
+.articles-wrapper
+  - @articles.each do |article|
+    .article
+      %span= article.title
